@@ -5,13 +5,7 @@ import android.widget.Toast;
 
 public class BaseUtil {
 
-    Context context;
-
-    public BaseUtil(Context context){
-        this.context = context;
-    }
-
-    public void showToast(String message){
+    public static void showToast(Context context, String message){
         Toast.makeText(context, message, Toast.LENGTH_LONG).show();
     }
 
